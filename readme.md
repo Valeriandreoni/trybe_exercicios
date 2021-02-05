@@ -1,1 +1,0 @@
-Pastas de exercicio, do bloco 2.1

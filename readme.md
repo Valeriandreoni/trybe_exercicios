@@ -1,0 +1,1 @@
+Pasta direcionada para colocar exercicios da Trybe (:

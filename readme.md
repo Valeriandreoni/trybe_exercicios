@@ -1,1 +1,1 @@
-Pasta direcionada para colocar exercicios da Trybe (:
+Pastas de exercicio, do bloco 2.1

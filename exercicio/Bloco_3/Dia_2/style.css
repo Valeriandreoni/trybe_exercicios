@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+  }
+    .h1 {
+        font-size: 65px;
+        color: orange;
+        font-family: sans-serif;
+    }
+    .Amarelo {
+      background-color: yellow;
+      margin-right: 95% ;
+    }
+    .Vermelho{
+      background-color: red;
+      margin-right: 95% ;
+    }
+    .Marrom{
+        background-color: saddlebrown;
+        margin-right: 95% ;
+        text
+    }
+    .paragrafo{
+      font-weight: 600;
+      font-size: 3em;
+      line-height: 2px;
+    }
+   

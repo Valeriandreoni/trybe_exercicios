@@ -1,0 +1,14 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover{
+    background-color:lightseagreen;
+    
+}
+li:active{
+    font-family: Arial;
+   
+}
+
+ol, ul { list-style:none

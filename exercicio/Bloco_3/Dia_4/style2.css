@@ -1,0 +1,32 @@
+div:hover{
+    border: 4px solid black;
+}
+div:nth-of-type(1){
+   background-color:#0086FF;
+}
+div:nth-of-type(2){
+    background-color:#9363DF;
+}
+
+div:nth-of-type(3){
+    background-color:#EF6CDA;
+    height:60px;
+}
+div:nth-of-type(4){
+    background-color: #FFA4EC;
+}
+div:nth-of-type(5){
+    background-color:#BA005C;
+}
+div:hover{
+    border: 4px solid black;
+}
+h3{
+    color:white ;
+    font-family: cursive;
+    font-weight: 12;
+}
+
+div:nth-of-type(2n+1) h3{
+    font-style: italic;
+}

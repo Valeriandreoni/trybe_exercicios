@@ -1,0 +1,12 @@
+let cor = document.getElementById("header-container");
+cor.style.backgroundColor = "rgb(98, 212, 22)";
+let corurgenteimportante1 = document.querySelectorAll("h3")[0];
+corurgenteimportante1.style.backgroundColor = "red";
+let corurgentenimportante1 = document.querySelectorAll("h3")[1];
+corurgentenimportante1.style.backgroundColor = "rgb(180,30,100)";
+let nurgenteimportate = document.querySelectorAll("h3")[2];
+nurgenteimportate.style.backgroundColor = "rgb(80,22,250)"
+let nurgentenimportante = document.querySelectorAll("h3")[3];
+nurgentenimportante.style.backgroundColor = "rgb(40,130,230)";
+let rodape = document.getElementsByTagName("footer")[0];
+rodape.style.color = "rgb(0,0,0)";

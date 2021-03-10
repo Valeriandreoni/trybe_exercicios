@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    div {
+      border-color: black;
+      border-style: solid;
+    }
+    
+    .title {
+      text-align: center;
+    }
+    
+    .main-content {
+      background-color: yellow;
+    }
+    
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .main-content .center-content p {
+      font-style: italic;
+    }
+    
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
+    
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+    
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function criandoh1() {
+      let criandoH1 = document.createElement('h1');
+      criandoH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(criandoH1);
+    }
+    criandoh1();
+
+    function criandiv() {
+      let criandodiv = document.createElement("div");
+      document.body.appendChild(criandodiv);
+      criandodiv.className = "main-content";
+    }
+    criandiv();
+
+    function criandodivfilha() {
+      let divfilha = document.createElement("div");
+      let divmae = document.querySelector(".main-content");
+      divmae.appendChild(divfilha);
+      divfilha.className = "center-content";
+    }
+    criandodivfilha();
+
+
+    function criandotagp() {
+      let tagp = document.createElement("p");
+      let divmae = document.querySelector(".center-content");
+      divmae.appendChild(tagp);
+      tagp.className = "tagp";
+      tagp.innerText = "Teste!!"
+    }
+    criandotagp();
+
+    function criandoleft() {
+      left = document.createElement("div");
+      let divmae = document.querySelector(".main-content");
+      divmae.appendChild(left);
+      left.className = "left-content";
+    }
+    criandoleft();
+
+    function criandoright() {
+      right = document.createElement("div");
+      let divmae = document.querySelector(".main-content");
+      divmae.appendChild(right);
+      right.className = "right-content";
+    }
+    criandoright();
+
+    function criandoimagem() {
+      let smallimagem = document.createElement("img");
+      smallimagem.src = "https://picsum.photos/200";
+      let maeleft = document.querySelector(".left-content");
+      maeleft.appendChild(smallimagem);
+      smallimagem.className = "small-image";
+
+    }
+    criandoimagem();
+
+    function criandolista() {
+      let ullista = document.createElement("ul");
+      let maelista = document.querySelector(".right-content");
+      maelista.appendChild(ullista);
+      let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      for (let key in array) {
+        let lista = document.createElement('li')
+        lista.innerHTML = array[key];
+        ullista.appendChild(lista)
+
+      }
+    }
+    criandolista();
+
+    function tresh3() {
+      let mae = document.querySelector(".main-content");
+      for (let index = 0; index < 4; index++) {
+        let elementoh3 = document.createElement("h3");
+        mae.appendChild(elementoh3);
+        elementoh3.innerText = "Oi";
+      };
+    }
+    tresh3();
+
+    function criandoclasses() {
+      let title = document.getElementsByTagName("h1")[0];
+      title.className = "title";
+      for (index = 0; index < 4; index++) {
+        let h3 = document.getElementsByTagName("h3")[index]
+        h3.className = "description";
+      }
+    }
+    criandoclasses();
+
+    function removendoleft() {
+      let divmae = document.querySelector(".main-content");
+      let left = document.getElementsByClassName("left-content")[0];
+      divmae.removeChild(left);
+
+    }
+    removendoleft();
+
+    function centralizando() {
+      let direito = document.getElementsByClassName("right-content")[0];
+      direito.style.marginRight = "auto";
+
+    }
+    centralizando();
+
+    function trocandocor() {
+      let corverde = document.getElementsByClassName("center-content")[0];
+      corverde.parentNode.style.backgroundColor = 'green'
+    }
+    trocandocor();
+
+    function removendolista() {
+      let dez = document.getElementsByTagName("li")[9];
+      let nove = document.getElementsByTagName("li")[8];
+      let ul = document.getElementsByTagName("ul")[0];
+      ul.removeChild(dez);
+      ul.removeChild(nove);
+    }
+    removendolista();
+  </script>
+</body>
+
+</html>
